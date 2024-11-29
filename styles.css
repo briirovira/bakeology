@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: #333;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: #fbe8c3;
+    padding-top: 2rem;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 4rem);
+    top: 0;
+    left: 2rem;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    word-break: break-word;
+    -webkit-word-break: break-word;
+}
+
+
+a {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;   
+    cursor: pointer;
+}
+
+button {
+    all: unset; 
+    cursor: pointer;
+}
+
+.shadow {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.logo {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu > a {
+    box-sizing: border-box;
+    position: relative;
+    top:-1rem;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    text-decoration: none;
+    color:#333;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: #e4b8c7;
+}
+
+.menu > a:hover {
+    padding-bottom: 1.5rem;
+    margin-bottom: -0.5rem;
+    transition-timing-function:ease
+}
+
+.menu-icon > img{
+    height: 22px;
+}
+
+.menu-icon {
+    background-color: #A0C6E3 !important;
+}
+
+#section-welcome > .image-cover {
+    margin-top: 8rem;
+    border-radius: 1rem;
+    height: 500px;
+    width: 100%;
+    background-image: url("../assets/8.jpeg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.title-container {
+    padding-left: 4rem;
+}
+
+.title-container > h1 {
+    font-size: 5rem;
+    color:#fff;
+}
+
+.subtitle-container > h2 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+    height: 60px;
+}
+
+.subtitle-container > p {
+    width: 450px;
+    color:#333;
+    line-height: 20px; 
+    font-size: 30px;
+}
+
+button {
+    padding: 0.3rem 3rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background-color:#A0C6E3;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#section-about{
+    background-color: #FFD199;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+#section-about > article {
+    display: flex;
+}
+
+.text-about-container {
+    width: 50%;
+    padding: 2rem;
+}
+
+.text-about-container > h2, .carrousel-about-container > h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text-about-container > p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 20px; 
+}
+
+.carrousel-about-container {
+    background-color: #FFD199;
+    border-radius: 1rem;
+    width: 50%;
+    margin-top:2rem ;
+}
+
+.carousel__viewport {
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.carousel__track {
+    display: flex; 
+    transition: transform 0.3s ease;
+}
+
+.carousel__slide {
+    flex: 0 0 100%; 
+    height: 400px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.carousel__slide img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 1rem;
+}
+
+#section-products {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-products > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#section-products > div > h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#section-products > .cakes-container {
+    width: 100%;
+    background-color: #f4d7a5;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+#section-products > .cupcakes-container {
+    width: 100%;
+    background-color: #ffdbc5;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+.cupcakes-galery, .cakes-galery {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.galery-item > a > img {
+    height: 200px;
+    width: 400;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.galery-item > a > img:hover{
+    height: 200px;
+    width: 400;
+    border-radius: 1rem;
+    transform:scale(1.1);
+}
+
+.galery-item > p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#section-reviews {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-reviews > .image-cover {
+    background-image: url("../assets/5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-items: space-between;
+}
+
+#section-reviews > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.image-cover {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+
+.image-cover > article {
+    border-radius: 1rem;
+    padding: 4rem;
+    background-color: #e4b8c799;
+    width: 500px;
+}
+
+.image-cover > article:nth-child(2) {
+    border-radius: 1rem;
+    padding: 4rem;
+    background-color: #f4d7a599;
+    width: 500px;
+}
+
+.image-cover > article > p {
+    font-size: 3rem;
+    line-height: 30px; 
+    font-weight: 300;
+}
+#section-contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+#section-contact > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#section-contact > form {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #f4d7a5;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 2rem 4rem;
+}
